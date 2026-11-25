@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coutinho Lava Car | Estética Automotiva e Lava Jato em Brasília</title>
+<meta name="description" content="Lava jato e estética automotiva no Riacho Fundo II, DF. Lavagens, polimento, cristalização e vitrificação. Agende pelo WhatsApp.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+ <div class="wrap nav">
+  <a class="logo" href="#inicio" aria-label="Coutinho Lava Jato, página inicial"><img src="logo.png" alt="Coutinho Lava Jato" width="364" height="200"></a>
+  <nav id="menu" aria-label="Principal">
+   <ul>
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+   </ul>
+   <a class="btn sm nav-cta" href="#contato">Agendar</a>
+  </nav>
+  <button id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+
+<!-- INÍCIO -->
+<section class="view" id="v-inicio">
+ <div class="hero">
+  <div class="wrap hero-in">
+   <p class="eyebrow">Lava jato e estética automotiva · Riacho Fundo II</p>
+   <h1>Limpeza que valoriza, brilho que impressiona.</h1>
+   <p class="lead">Cuidamos do seu carro por dentro e por fora, com produtos adequados a cada pintura e atenção a cada detalhe.</p>
+   <div class="acoes">
+    <a class="btn" href="https://wa.me/5561994244624" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    <a class="btn ghost" href="#servicos">Ver serviços e preços</a>
+   </div>
+  </div>
+ </div>
+
+ <div class="strip"><div class="wrap">
+  <div><small>Horário</small><strong id="status"><i class="dot"></i>Consulte o horário</strong></div>
+  <div><small>Endereço</small><strong>Riacho Fundo II, QS 06, Bloco E, Lote 03</strong></div>
+  <div><small>WhatsApp</small><a href="https://wa.me/5561994244624" target="_blank" rel="noopener"><strong>(61) 99424-4624</strong></a></div>
+ </div></div>
+
+ <div class="sec"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow dark">Preços</p><h2>Os serviços mais procurados</h2><p class="sub">Valores por serviço. Podem variar conforme o porte do veículo.</p></div>
+  <div class="grid" id="destaques"></div>
+  <p class="more reveal"><a class="link" href="#servicos">Ver todos os serviços</a></p>
+ </div></div>
+
+ <div class="sec dark"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow">Promoções</p><h2>Um dia, uma oferta</h2><p class="sub">Preços especiais em dias da semana. Aproveite o do dia.</p></div>
+  <div class="dias reveal" id="promos"></div>
+ </div></div>
+
+ <div class="sec"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow dark">Diferenciais</p><h2>Por que escolher o Coutinho</h2></div>
+  <div class="difs">
+   <div class="reveal"><span>01</span><h3>Atendimento transparente</h3><p>Você sabe o que será feito e quanto vai pagar antes de começarmos.</p></div>
+   <div class="reveal"><span>02</span><h3>Produtos seguros</h3><p>Usamos produtos adequados a cada tipo de pintura e superfície.</p></div>
+   <div class="reveal"><span>03</span><h3>Cuidado por dentro e por fora</h3><p>Da lataria ao painel, atenção aos detalhes que fazem diferença.</p></div>
+   <div class="reveal"><span>04</span><h3>Para todo tipo de veículo</h3><p>Carros, SUVs e utilitários, com serviços para cada necessidade.</p></div>
+  </div>
+ </div></div>
+
+ <div class="cta"><div class="wrap">
+  <h2>Pronto para deixar seu carro brilhando?</h2>
+  <a class="btn" href="#contato">Agendar meu horário</a>
+ </div></div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="view" id="v-servicos">
+ <div class="topo"><div class="wrap"><p class="eyebrow">Serviços e preços</p><h1>Escolha o cuidado ideal para o seu carro</h1><p>Clique em “Agendar” no serviço desejado e finalize pelo WhatsApp.</p></div></div>
+ <div class="wrap conteudo">
+  <div class="tabs" role="group" aria-label="Categoria de serviço">
+   <button class="on" data-cat="lav" aria-pressed="true">Lavagens</button>
+   <button data-cat="est" aria-pressed="false">Estética automotiva</button>
+  </div>
+  <div class="grid" id="lista"></div>
+ </div>
+</section>
+
+<!-- SOBRE -->
+<section class="view" id="v-sobre">
+ <div class="topo"><div class="wrap"><p class="eyebrow">Sobre nós</p><h1>Quem cuida do seu carro</h1><p>Conheça o Coutinho Lava Car e como trabalhamos.</p></div></div>
+ <div class="wrap conteudo">
+  <div class="duas">
+   <div class="texto">
+    <p>O Coutinho Lava Car é um lava jato e centro de estética automotiva no Riacho Fundo II. Nosso trabalho é deixar seu carro limpo, protegido e com aparência de novo.</p>
+    <p>Usamos produtos adequados para cada tipo de pintura e superfície, com atenção aos detalhes que fazem diferença, do brilho da lataria ao acabamento do painel.</p>
+    <a class="btn dk" href="#contato">Falar com a gente</a>
+   </div>
+   <ul class="check">
+    <li>Atendimento próximo e transparente</li>
+    <li>Produtos seguros para a pintura</li>
+    <li>Cuidado por dentro e por fora</li>
+    <li>Carros, SUVs e utilitários</li>
+   </ul>
+  </div>
+  <h2 class="h2s">Como funciona</h2>
+  <ol class="passos">
+   <li><b>Agende</b>Escolha o serviço pelo WhatsApp.</li>
+   <li><b>Deixe o carro</b>Avaliamos e combinamos o prazo.</li>
+   <li><b>Cuidamos de tudo</b>Serviço feito com atenção.</li>
+   <li><b>Retire</b>Seu carro limpo e brilhando.</li>
+  </ol>
+  <h2 class="h2s">Depoimentos</h2>
+  <div class="grid" id="depoimentos"></div>
+ </div>
+</section>
+
+<!-- CONTATO -->
+<section class="view" id="v-contato">
+ <div class="topo"><div class="wrap"><p class="eyebrow">Contato</p><h1>Agende seu horário</h1><p>Fale com a gente pelo WhatsApp ou envie sua solicitação pelo formulário.</p></div></div>
+ <div class="wrap conteudo">
+  <div class="duas">
+   <div class="info">
+    <div><small>WhatsApp / Telefone</small><a class="tel" href="https://wa.me/5561994244624" target="_blank" rel="noopener">(61) 99424-4624</a></div>
+    <div><small>Endereço</small>Riacho Fundo II, QS 06, Bloco E, Lote 03<br>Brasília – DF</div>
+    <div><small>Funcionamento</small>Segunda a sexta: das 10:00 às 19:20<br>Sábado: das 10:00 às 19:40<br>Domingo: das 10:00 às 17:40</div>
+   </div>
+   <form id="form">
+    <h2>Solicitar agendamento</h2>
+    <div><label for="nome">Nome</label><input id="nome" required autocomplete="name"></div>
+    <div><label for="serv">Serviço desejado</label><select id="serv"></select></div>
+    <div><label for="quando">Dia e horário preferidos</label><input id="quando" placeholder="Ex.: sábado, de manhã"></div>
+    <div><label for="msg">Mensagem</label><textarea id="msg" rows="3" placeholder="Modelo do carro, observações..."></textarea></div>
+    <button class="btn dk" type="submit">Enviar pelo WhatsApp</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+ <div><img class="flogo" src="img/logo.png" alt="Coutinho Lava Jato" width="364" height="200"><p>Limpeza que valoriza, brilho que impressiona.</p></div>
+ <div><small>Contato</small><p>Riacho Fundo II, QS 06, Bloco E, Lote 03<br>(61) 99424-4624<br>@coutinholavacar2026</p></div>
+ <div><small>Navegação</small><p><a href="#servicos">Serviços</a> · <a href="#sobre">Sobre</a> · <a href="#contato">Contato</a></p><p class="copy">© 2026 Coutinho Lava Car</p></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/5561994244624" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+ <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
