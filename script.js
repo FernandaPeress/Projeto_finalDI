@@ -108,3 +108,17 @@ $('#form').addEventListener('submit',function(e){
 });
 
 rota();reveal();
+/* ===== TEMA CLARO / ESCURO ===== */
+var raiz=document.documentElement,btTema=document.getElementById('tema');
+function aplicaTema(t,salvar){
+ raiz.setAttribute('data-theme',t);
+ btTema.setAttribute('aria-pressed',t==='dark');
+ btTema.setAttribute('aria-label',t==='dark'?'Mudar para o tema claro':'Mudar para o tema escuro');
+ if(salvar){try{localStorage.setItem('tema',t)}catch(e){}}
+}
+aplicaTema(raiz.getAttribute('data-theme')||'light');
+btTema.addEventListener('click',function(){aplicaTema(raiz.getAttribute('data-theme')==='dark'?'light':'dark',true)});
+if(window.matchMedia){matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){
+ var salvo;try{salvo=localStorage.getItem('tema')}catch(x){}
+ if(!salvo)aplicaTema(e.matches?'dark':'light');
+})}k
