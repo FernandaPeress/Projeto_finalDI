@@ -121,4 +121,4 @@ btTema.addEventListener('click',function(){aplicaTema(raiz.getAttribute('data-th
 if(window.matchMedia){matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){
  var salvo;try{salvo=localStorage.getItem('tema')}catch(x){}
  if(!salvo)aplicaTema(e.matches?'dark':'light');
-})}k
+})}
